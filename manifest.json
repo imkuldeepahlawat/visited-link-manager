@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Link Visibility Manager",
+  "version": "1.0",
+  "description": "Manage visibility of visited and unvisited links",
+  "permissions": ["activeTab", "storage", "history"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+/* This file is now empty as we're handling visibility in JavaScript */
+
+a[style*="display: none"] {
+  display: none !important;
+}
